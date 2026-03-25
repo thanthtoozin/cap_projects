@@ -1,0 +1,17 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: 132
+nodes:
+- role: control-plane
+  image: kindest/node:v1.32.11@sha256:5fc52d52a7b9574015299724bd68f183702956aa4a2116ae75a63cb574b35af8
+- role: worker
+  image: kindest/node:v1.32.11@sha256:5fc52d52a7b9574015299724bd68f183702956aa4a2116ae75a63cb574b35af8
+- role: worker
+  image: kindest/node:v1.32.11@sha256:5fc52d52a7b9574015299724bd68f183702956aa4a2116ae75a63cb574b35af8
+- role: worker
+  image: kindest/node:v1.32.11@sha256:5fc52d52a7b9574015299724bd68f183702956aa4a2116ae75a63cb574b35af8
+networking:
+  podSubnet: 10.242.0.0/16
+  serviceSubnet: 10.132.0.0/16
+  kubeProxyMode: "ipvs" #iptables #none #"nftables" (Kubernetes v1.31+) (By default iptables is used)
+
