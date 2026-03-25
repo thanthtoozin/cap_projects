@@ -4,3 +4,7 @@
 *.tfvars
 *.pem
 crash.log
+.DS_Store
+**/.ssh/
+*.key
+*.pub
