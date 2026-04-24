@@ -8,4 +8,4 @@ crash.log
 **/.ssh/
 *.key
 *.pub
-**/.vagrant/
+**/.vagrant/vibe_coding/thant_dev_accessKeys.csv
